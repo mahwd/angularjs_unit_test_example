@@ -5,6 +5,7 @@ const urlChanged = function(url) {
       });
     };
   };
+  
 const baseUrl = "http://192.168.31.13:9080";
 describe('Init tests of CSDR test server', function () {
     browser.ignoreSyncronization=true;
@@ -14,7 +15,7 @@ describe('Init tests of CSDR test server', function () {
         browser.get(baseUrl);
         console.log('redirected to index of login ...')
     });
-    it('enter creditials', () => {
+    it('Enter creditials', () => {
         console.log("filling login fields... ");
         const username = element(by.name("username"));
         const password = element(by.name("password"));
